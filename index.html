@@ -3,12 +3,6 @@
 
    <head>
       <title>serecinth</title> 
-        /* Set display to none for image*/
-        #image {
-            display: none;
-        }
-      </style>
-</head>
    </head>
 	
    <body>
@@ -16,7 +10,7 @@
       <img src = "crabgfs.png" alt = ":)" width="70%" height="70%"/>
       <h1>gay (art by @plantskid) </h1>
 	   
-      <img id="kisy" src= "kisy.gif" alt="now kiss" />
+      <img id="kisy" src="" />
     </div>
  
     <button type="button"
@@ -27,12 +21,16 @@
     <script>
         function show() {
  
-            document.getElementById('kisy')
-                    .style.display = "block";
+            /* Get image and change value
+            of src attribute */
+            let image = document.getElementById("kisy");
  
-            document.getElementById('kisybtn')
+            image.src = "kisy.gif"
+ 
+            document.getElementById("kisybtn")
                     .style.display = "none";
         }
+    </script>
    </body>
 	
 </html>
