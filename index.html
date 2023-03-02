@@ -9,7 +9,27 @@
 	
       <img src = "crabgfs.png" alt = ":)" width="70%" height="70%"/>
 	   <h1>gay (art by @plantskid) </h1>
-	   <button type="button">now kiss</button>
+	   <img id="kisy" src=
+"kisy.gif"
+            alt="now kiss" />
+    </div>
+ 
+    <button type="button"
+        onclick="show()" id="kisybtn">
+        now kiss
+    </button>
+ 
+    <script>
+        function show() {
+ 
+            /* Access image by id and change
+            the display property to block*/
+            document.getElementById('kisy')
+                    .style.display = "block";
+ 
+            document.getElementById('kisybtn')
+                    .style.display = "none";
+        }
    </body>
 	
 </html>
